@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Week: Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Developer Week - Registration Form</h1>
+        <p>Please fill in the form below. We'll contact you as soon as possible.</p>
+        <form action="#" method="POST">
+            <div class="field">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" required placeholder="Luke">
+            </div>
+            <div class="field">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" required placeholder="Skywalker">
+            </div>
+            <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="lukeskywalker@starwars.com" required>
+            </div>
+            <fieldset class="radio">
+                <legend>Development area:</legend>
+                <div class="radio-wrap">
+                    <input type="radio" name="devarea" id="frontend" value="frontend" checked>
+                    <label for="frontend">Front-end</label>
+                </div>
+                <div class="radio-wrap">
+                    <input type="radio" name="devarea" id="backend" value="backend">
+                    <label for="backend">Back-end</label>
+                </div>
+                <div class="radio-wrap">
+                    <input type="radio" name="devarea" id="fullstack" value="fullstack">
+                    <label for="fullstack">Fullstack</label>
+                </div>
+            </fieldset>
+            <div class="field">
+                <label for="levelselection">What's your professional level?</label>
+                <select name="levelselection" id="levelselection">
+                    <option value="" disabled selected>Select your level</option>
+                    <option value="junior">Junior</option>
+                    <option value="middle">Mid-level</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+            <fieldset class="checkbox">
+                <legend>Select the languages you use:</legend>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="language1" id="language1" value="html">
+                    <label for="language1">HTML</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="language2" id="language2" value="css">
+                    <label for="language2">CSS</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="language3" id="language3" value="javascript">
+                    <label for="language3">JavaScript</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="language4" id="language4" value="php">
+                    <label for="language4">PHP</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="language5" id="language5" value="c#">
+                    <label for="language5">C#</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="language6" id="language6" value="python">
+                    <label for="language6">Python</label>
+                </div>
+                <div class="checkbox-wrap">
+                <input type="checkbox" name="language7" id="language7" value="java">
+                <label for="language7">Java</label>
+                </div>
+            </fieldset>
+            <div class="field">
+                <label for="fav-os">What's your favorite operating system?</label>
+                <input type="text" name="fav-os" id="fav-os" list="os-list" placeholder="Ex: Windows">
+                <datalist id="os-list">
+                    <option value="Windows"></option>
+                    <option value="Linux"></option>
+                    <option value="MacOS"></option>
+                    <option value="Android"></option>
+                </datalist>
+            </div>
+            <div class="field">
+                <label for="message">Why do you want to take part in the Developer Week?</label>
+                <textarea name="message" id="message" rows="4" placeholder="Write your answer here" ></textarea>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </main>    
+</body>
+</html>

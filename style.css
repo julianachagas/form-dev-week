@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #4B79A1; 
+    background: linear-gradient(45deg, #8360c3, #2ebf91);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-width: 100vw;     
+}
+
+main.container {
+    min-width: 50vw;  
+    max-width: 300px;      
+    margin: 3rem auto;
+    background: #242156;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;   
+}
+
+main h1{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+main p {
+    font-size: 0.875rem;    
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+main form fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+    color: white;     
+}
+
+main form fieldset legend {
+    margin-bottom: 0.5rem;
+}
+
+fieldset label{
+    padding-right: 1.5rem;
+}
+
+.radio {
+    display: flex;    
+}
+
+.field{
+    display: flex;
+    flex-direction: column;    
+}
+
+.field label {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.field input {
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    height: 1.5rem;    
+}
+
+.field input:focus, textarea:focus, select:focus {
+    outline: 2px solid #2ebf91;
+    background-color: hsl(157, 50%, 94%);
+}
+
+button:focus {
+    outline: 1px solid white;
+}
+
+select {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    color: rgb(68, 68, 68);
+}
+
+select option {
+    color: black;
+}
+
+select option:first-child {
+    color: rgb(128, 128, 128);
+}    
+
+.checkbox {
+    display: flex;    
+}
+
+.checkbox-wrap {
+    padding-right: 1.5rem;
+}
+
+
+.checkbox label {
+    padding-right: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    margin-bottom: 2.5rem;
+    margin-top: 0.5rem;
+    outline: none;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;  
+    font-size: 1rem; 
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    min-width: 20%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    background: #2ebf91;
+    color: white;
+    letter-spacing: 0.05rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: #2ebf91;
+}
+
+/* Media querie 1600px pra baixo, para adequar os radio e checkbox */
+@media screen and (max-width: 100rem) {
+    .checkbox {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .checkbox-wrap {
+        margin-bottom: 1rem;
+    }
+
+    .radio-wrap {
+        margin-bottom: 1rem;
+    }
+    
+    main form fieldset legend {
+        margin-bottom: 1rem;
+    }
+
+    main form fieldset {
+        margin-bottom: 0.5rem;             
+    } 
+}
+
+/* Media querie para menor que 900px, tablets, pega todos os anteriores mais esse */
+@media screen and (max-width: 56rem) {
+    .radio {
+        flex-direction: column;        
+    }
+   
+}
+
+/* Media querie para menor que 450px, mobile, para adequar os radio e checkbox e o container, pega tudo anterior mais esse */
+
+@media screen and (max-width: 28rem) {
+
+    main.container {
+        max-width: 100vw;             
+        margin: 0;        
+        border-radius: 0;        
+    }
+
+    body {
+        background: none; 
+    }       
+}
