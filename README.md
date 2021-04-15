@@ -1,3 +1,3 @@
 ## Registration Form 
 
-### HTML | CSS
+Technologies: HTML | CSS
